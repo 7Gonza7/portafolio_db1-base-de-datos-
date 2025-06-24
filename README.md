@@ -21,38 +21,6 @@ arreglar errores de la API.
 
 ayuda de IA: 
 
---------------------------------------------------------------------------------------------------------
-
-<?php
-// ⚙️ Datos de conexión a la base de datos
-$host = 'localhost';                        // 🖥️ Host del servidor MySQL (local)
-$db   = 'gonzalo_carvajal_db1';             // 📂 Nombre de la base de datos
-$user = 'gonzalo_carvajal';                 // 👤 Usuario de la base
-$pass = 'gonzalo_carvajal2025';             // 🔑 Contraseña del usuario
-$charset = 'utf8mb4';                       // 🔤 Codificación para soportar acentos y emojis
-
-// 🧪 Creo el DSN (cadena de conexión)
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-
-// 🛠️ Opciones para configurar PDO
-$options = [
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION, // ⚠️ Lanza excepciones si hay errores
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,       // 📥 Los resultados serán arrays asociativos
-    PDO::ATTR_EMULATE_PREPARES   => false,                  // 🔒 Desactiva emulación para usar consultas reales
-];
-
-try {
-    // 🔌 Creo la conexión PDO con los datos y opciones
-    $conn = new PDO($dsn, $user, $pass, $options);
-} catch (\PDOException $e) {
-    // 🛑 Si algo falla, muestro un mensaje genérico y corto la ejecución
-    echo "Error al conectar con la base de datos.";
-
-    // 🐞 (En desarrollo puedes descomentar esta línea para ver el error real)
-    // echo "Error: " . $e->getMessage();
-    exit;
-}
-
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 <?php
