@@ -15,3 +15,4 @@ php, MYSQL para el boostrap, con ajustes minimos con css
 # uso de IA
 
 la IA que ocupe fue chatGPT y fue la que me ayudo a entender mejor la conexion para la base de datos.
+arreglar errores de la API.
