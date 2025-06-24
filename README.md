@@ -21,6 +21,8 @@ arreglar errores de la API.
 
 ayuda de IA: 
 
+--------------------------------------------------------------------------------------------------------
+
 <?php
 // ⚙️ Datos de conexión a la base de datos
 $host = 'localhost';                        // 🖥️ Host del servidor MySQL (local)
